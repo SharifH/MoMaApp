@@ -1,0 +1,15 @@
+<%= form_for @painting do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+<br>
+	<%= f.label :year %>
+	<%= f.text_field :year %>
+<br>
+	<%= f.label :medium %>
+	<%= f.text_field :medium %>
+<br>
+	<%= f.label :style %>
+	<%= f.text_field :style %>
+<br>
+	<%= f.submit "Submit" %>
+	<% end%>

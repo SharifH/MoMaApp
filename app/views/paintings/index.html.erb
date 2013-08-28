@@ -1,0 +1,16 @@
+<h1>These are our paintings:</h1>
+
+	<% @paintings.each do |painting| %>
+		<ol>
+		<%= painting.title %>
+		</ol> 
+		<ol>
+			<img src="<%=painting.image%>" ></ol>
+			<br>
+			<%= link_to "Edit/Update", edit_painting_path(painting.id)%>
+			<%= button_to "DESTROY", painting, :method => :delete  %>
+		<% end%>
+
+
+
+

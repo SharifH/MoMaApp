@@ -1,0 +1,9 @@
+<h3>This Is Your New Submission Pending Approval</h3>
+
+
+<%= @painting.title %><br>
+<%= @painting.year %><br>
+<%= @painting.medium %><br>
+<%= @painting.style %><br>
+<%= link_to "edit", edit_painting_path(@painting.id)%>
+<img src="<%=@painting.image%>" >
